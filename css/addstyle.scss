@@ -1,3 +1,46 @@
-body {
-    background: red;
+$theme: indigo;
+$bp-md: 767px; //breakpoint
+@mixin sm {
+  @media screen and (max-width: ($bp-md)) {
+    @content;
+  }
+}
+
+#header .logo-title, .section .section-title{
+    color: $theme;
+}
+
+#header {
+    overflow: hidden;
+    img {
+        opacity: 0.3;
+        pointer-events: none;
+        height: 100vh;
+        width: 100vw;
+    }
+    .logo {
+        position: absolute;
+    }
+}
+
+#about {
+    .col-index {
+        width: 25%;
+        font-weight: bold;
+        text-decoration: underline;
+        @include sm {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+    }
+    .col-contents {
+        width: 70%;
+        @include sm {width: 100%;}
+    }
+}
+
+#contact {
+    p.center {
+        text-align: center;
+    }
 }

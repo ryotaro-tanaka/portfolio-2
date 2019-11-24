@@ -1,4 +1,31 @@
-body {
-  background: red; }
+#header .logo-title, .section .section-title {
+  color: indigo; }
+
+#header {
+  overflow: hidden; }
+  #header img {
+    opacity: 0.3;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw; }
+  #header .logo {
+    position: absolute; }
+
+#about .col-index {
+  width: 25%;
+  font-weight: bold;
+  text-decoration: underline; }
+  @media screen and (max-width: 767px) {
+    #about .col-index {
+      width: 100%;
+      margin-bottom: 18px; } }
+#about .col-contents {
+  width: 70%; }
+  @media screen and (max-width: 767px) {
+    #about .col-contents {
+      width: 100%; } }
+
+#contact p.center {
+  text-align: center; }
 
 /*# sourceMappingURL=addstyle.css.map */
