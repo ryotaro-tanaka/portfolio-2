@@ -85,8 +85,14 @@ li {
   height: 550px;
 }
 
+#header img {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 #header .logo {
   display: block;
+  position: absolute;
 }
 
 #header .logo-name {
