@@ -29,7 +29,6 @@
         <span class="logo-title">PORTFOLIO</span>
         <span class="logo-desc">web engineer</span>
       </h1>
-      <!-- <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@afherreraphoto?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Andres Herrera"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Andres Herrera</span></a> -->
     </header>
     <nav id="gnav">
       <ul>
@@ -39,60 +38,183 @@
       </ul>
     </nav>
     <main id="contents">
-      <!-- <section class="section" id="works">
-        <div class="inner">
-          <div class="section-title-block">
-            <h2 class="section-title">WORKS</h2>
-          </div>
-          <div class="card-wrapper my-gallery">
-            <figure class="card">
-              <a href="img/works/work01.jpg" data-size="980x668" class="card-image">
-                <img src="img/works/thumb/thumb_work01.jpg" alt="" />
-              </a>
-              <figcaption class="card-caption">
-                <p class="card-caption-title">portfolio</p>
-                <p class="card-caption-info">web page</p>
-                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
-              </figcaption>
-            </figure>
-            <figure class="card">
-              <a href="img/works/work03.jpg" data-size="980x668" class="card-image">
-                <img src="img/works/thumb/thumb_work03.jpg" alt="" />
-              </a>
-              <figcaption class="card-caption">
-                <p class="card-caption-title">burndown chart</p>
-                <p class="card-caption-info">disktop application</p>
-                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
-              </figcaption>
-            </figure>
-            <figure class="card">
-              <a href="img/works/work02.jpg" data-size="980x668" class="card-image">
-                <img src="img/works/thumb/thumb_work02.jpg" alt="" />
-              </a>
-              <figcaption class="card-caption">
-                <p class="card-caption-title">megane</p>
-                <p class="card-caption-info">web page</p>
-                <p class="card-caption-url"><a class="url-link" href="＃" target="_blank">Link</a></p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section> -->
       <section class="section" id="works2">
         <div class="inner">
           <div class="section-title-block">
             <h2 class="section-title">WORKS</h2>
           </div>
-          <div class="">
-            <figure>
-              <img src="img/works/ryo.png">
+          <div>
+            <figure onclick="displayDescriptionLg($(this).children('img'), $('#ryo-description'))">
+              <img src="img/works/ryo.png" id="firstopen-img">
             </figure>
-            <figure>
+            <figure onclick="displayDescriptionLg($(this).children('img'), $('#chart-description'))">
               <img src="img/works/chart.png">
             </figure>
-            <figure>
+            <figure onclick="displayDescriptionLg($(this).children('img'), $('#round-description'))">
               <img src="img/works/round.png">
             </figure>
+          </div>
+          <div id="description-lg">
+            <!-- ryo -->
+            <div id="ryo-description">
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">name</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    portfolio(田中 遼太郎)
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">overview</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    aaaa
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">use skill</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    HTML/SCSS/jQuery/npm/Git
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">repository</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    <a href="https://github.com/ryotaro-tanaka/portfolio-2">github.com/ryotaro-tanaka/portfolio-2</a>
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">used source</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    template -> 
+                    <a href="https://webdesigner-go.com/template/portfolio/">ねこポン</a>
+                  </p>
+                  <p>
+                    img -> 
+                    <a href="https://unsplash.com/@afherreraphoto?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">Andres Herrera</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- chart -->
+            <div id="chart-description">
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">name</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    burndown chart
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">overview</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    aaaa
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">use skill</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    ?/?/?
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">repository</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    <a href="">github.com/?</a>
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">used source</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">-</p>
+                </div>
+              </div>
+            </div>
+            <!-- round -->
+            <div id="round-description">
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">name</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    round glasses
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">overview</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    aaaa
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">use skill</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    ?/?/?
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">repository</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">
+                    <a href="">github.com/?</a>
+                  </p>
+                </div>
+              </div>
+              <div class="two-column-wrapper">
+                <div class="col-index">
+                  <p class="text">used source</p>
+                </div>
+                <div class="col-contents">
+                  <p class="text">-</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -106,7 +228,6 @@
           </div>
           <div class="two-column-wrapper">
             <div class="col-index">
-              <!-- <img src="img/profile/img_profile.png" alt=""> -->
               <p class="text">name</p>
             </div>
             <div class="col-contents">
@@ -176,9 +297,9 @@
               <p class="text">
                 Apache, Tomcat, SQLite
               </p>
-              <p class="text">
+              <!-- <p class="text">
                 Cloud9, S3, Heroku, GitHub
-              </p>
+              </p> -->
               <p class="text underline">
                 Photoshop
               </p>
@@ -283,5 +404,28 @@
   <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
   <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
+  <script type='text/javascript'>
+    const displayDescriptionLg = ($img, $desc) => {
+      const className = 'selected';
+
+      //$img
+      if ($img.hasClass(className)) {
+        $img.removeClass(className);
+      } else {
+        $('#works2 img').removeClass(className);
+        $img.addClass(className);
+      }
+
+      //$desc
+      if ($desc.hasClass(className)){
+        $('#description-lg>div').removeClass(className); 
+      } else {
+        $('#description-lg>div').removeClass(className);
+        $desc.addClass(className);
+      }
+    }
+
+    displayDescriptionLg($('#firstopen-img'), $('#ryo-description'))
+  </script>
 </body>
 </html>

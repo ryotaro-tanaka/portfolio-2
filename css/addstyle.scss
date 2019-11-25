@@ -27,13 +27,43 @@ $bp-md: 767px; //breakpoint
     figure {
         display: inline-block;
         width: 32%;
+        // @include sm {width: 100%;}
         img {
             width: 50%;
             margin: 10% auto 40%;
-            &:hover {
+            // @include sm {
+            //     width: 100%;
+            //     margin: 0;
+            // }
+            &:hover, &.selected {
                 width: 100%;
                 margin: 0;
                 cursor: pointer;
+            }
+        }
+    }
+    #description-lg {
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+        > div {
+            display: none;
+        }
+        > div.selected {
+            display: block;
+        }
+        .two-column-wrapper{
+            flex-wrap: wrap;
+            .col-index {
+                width: 25%;
+                font-weight: bold;
+                text-decoration: underline;
+                @include sm {
+                    width: 100%;
+                    margin-bottom: 18px;
+                }
+            }
+            .col-contents {
+                width: 70%;
+                @include sm {width: 100%;}
             }
         }
     }
