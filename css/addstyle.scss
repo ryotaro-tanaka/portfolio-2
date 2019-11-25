@@ -37,6 +37,9 @@ $bp-md: 767px; //breakpoint
         width: 70%;
         @include sm {width: 100%;}
     }
+    .underline {
+        text-decoration: line-through;
+    }
 }
 
 #contact {

@@ -24,6 +24,8 @@
   @media screen and (max-width: 767px) {
     #about .col-contents {
       width: 100%; } }
+#about .underline {
+  text-decoration: line-through; }
 
 #contact p.center {
   text-align: center; }
