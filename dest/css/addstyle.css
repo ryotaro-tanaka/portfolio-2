@@ -11,6 +11,38 @@
   #header .logo {
     position: absolute; }
 
+#works2 figure {
+  display: inline-block;
+  width: 32%; }
+  #works2 figure img {
+    width: 50%;
+    margin: 10% auto 40%; }
+    #works2 figure img:hover, #works2 figure img.selected {
+      width: 100%;
+      margin: 0;
+      cursor: pointer; }
+#works2 #description-lg {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); }
+  #works2 #description-lg > div {
+    display: none; }
+  #works2 #description-lg > div.selected {
+    display: block; }
+  #works2 #description-lg .two-column-wrapper {
+    flex-wrap: wrap; }
+    #works2 #description-lg .two-column-wrapper .col-index {
+      width: 25%;
+      font-weight: bold;
+      text-decoration: underline; }
+      @media screen and (max-width: 767px) {
+        #works2 #description-lg .two-column-wrapper .col-index {
+          width: 100%;
+          margin-bottom: 18px; } }
+    #works2 #description-lg .two-column-wrapper .col-contents {
+      width: 70%; }
+      @media screen and (max-width: 767px) {
+        #works2 #description-lg .two-column-wrapper .col-contents {
+          width: 100%; } }
+
 #about .col-index {
   width: 25%;
   font-weight: bold;
@@ -24,6 +56,8 @@
   @media screen and (max-width: 767px) {
     #about .col-contents {
       width: 100%; } }
+#about .underline {
+  text-decoration: line-through; }
 
 #contact p.center {
   text-align: center; }
