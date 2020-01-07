@@ -23,6 +23,12 @@ $bp-md: 767px; //breakpoint
     }
 }
 
+#gnav, nav.footer-link {
+    @include sm {
+        display: none;
+    }
+}
+
 #works2 {
     figure {
         display: inline-block;
